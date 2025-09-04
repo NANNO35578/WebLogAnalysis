@@ -1,6 +1,6 @@
 {
     "average_response_time_ms": 200.0,
-    "busiest_hour": 0,
+    "busiest_hour": 11,
     "status_code_counts": {
         "200": 3,
         "404": 1,

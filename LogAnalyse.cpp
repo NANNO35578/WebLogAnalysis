@@ -51,7 +51,7 @@ int main(int argc, char const *argv[]) {
     // 3. 提取小时
     // 假设 timestamp 格式固定为 "YYYY-MM-DDTHH:MM:SSZ"
     // 即小时开始下标为26
-    int hour = (10 * line[26] + line[27]);
+    int hour = (10 * (line[26] - '0') + line[27] - '0');
     ++hourCount[hour];
   }
 
@@ -62,7 +62,7 @@ int main(int argc, char const *argv[]) {
 
   // 最繁忙的小时
   int busiestHour = 0;
-  for (uint64_t i : hourCount) {
+  for (int i = 0; i < 24; ++i) {
     if (hourCount[i] > hourCount[busiestHour]) busiestHour = i;
   }
 
