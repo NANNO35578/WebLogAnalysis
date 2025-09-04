@@ -1,0 +1,10 @@
+{
+    "average_response_time_ms": 200.0,
+    "busiest_hour": 0,
+    "status_code_counts": {
+        "200": 3,
+        "404": 1,
+        "500": 1
+    },
+    "total_requests": 5
+}
